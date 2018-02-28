@@ -1,0 +1,14 @@
+Name:Vinay varma
+Place:vizag
+Rollno:16505
+Phone number:7732092345
+
+Name:Srinivas
+place:guntur
+Rollno:16506
+phone number:7832623236
+
+Name:venu
+place:hyderabad
+Rollno:16508
+phone number:659874532
