@@ -111,34 +111,31 @@ class Main extends StudentDairy{
 					}
 					else if(home.optionCouncellor == 7) // the councellor can see how many duty leaves the student got.
 					{
-						
-						councellor.viewDutyLeaves();
+					// only viewable by the student, councellor, faculty
+				        	councellor.viewDutyLeaves();
 					}
 				}
 
-				if(home.optionhome==2) //parent
+				if(home.optionhome==2) //parent options
 				{
-
 					Scanner ss = new Scanner(System.in);
-					if(home.optionparent==1)
-								{
-									System.out.println("Enter your child's roll no");
-
-									s_number = ss.nextInt();
-									councellor.printdetails(s_number);
-								}
-									if(home.optionparent == 2 )
-									{
-										faculty.getjava();
-										faculty.getdsa();
-										faculty.getdc();
-										faculty.getmaths();
-									}
-								if(home.optionparent ==3)
-								{
-									//  System.out.println("Enter your child's roll no");
-									//  p_number = ss.nextInt();
-									 councellor.viewBehaviour();
+					if(home.optionparent==1) //viewing their child's details
+					 	{
+			            			System.out.println("Enter your child's roll no");
+							s_number = ss.nextInt();
+							councellor.printdetails(s_number);
+						}
+					if(home.optionparent == 2 ) //viewing their child's academic details
+						{
+							faculty.getjava();
+							faculty.getdsa();
+							faculty.getdc();
+							faculty.getmaths();
+						}
+					if(home.optionparent ==3) // to view the behaviour their child.
+					{
+						//cannot be viewed by the student.
+						 councellor.viewBehaviour();
 								}
 				}
 
