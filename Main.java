@@ -27,7 +27,7 @@ class Main extends StudentDairy{
 					if(home.optionstudent == 2 )
 						{
 							faculty.getjava(); //viewing marks and attendance for different subjects.
-							faculty.getdsa(); //only will be visible if faculty already entered marks.
+							faculty.getdsa(); //will be only visible if faculty already entered marks.
 							faculty.getdc();
 							faculty.getmaths();
 						}
@@ -36,30 +36,30 @@ class Main extends StudentDairy{
 							councellor.viewDutyLeaves();
 						}
 			}
-			if(home.optionhome == 4) //faculty
+			if(home.optionhome == 4) //faculty.
 			{
-				if(home.optionfaculty2 == 1)
+				if(home.optionfaculty2 == 1) //selecting the subject.
 				{
-					if(home.optionfaculty == 1)
+					if(home.optionfaculty == 1) // Java faculty.
 					{
-						faculty.calljava();
+						faculty.calljava(); 
 					}
-					if(home.optionfaculty == 2)
+					if(home.optionfaculty == 2) // Data Structures faculty.
 					{
 						faculty.callds();
 					}
-					if(home.optionfaculty == 3)
+					if(home.optionfaculty == 3) // Digital circuits faculty
 					{
 						faculty.calldc();
 					}
-					if(home.optionfaculty == 4)
+					if(home.optionfaculty == 4) //Maths Faculty
 					{
 						faculty.callmaths();
 					}
 				}
-			else if(home.optionfaculty2==2)
+			else if(home.optionfaculty2==2) //to view the details
 			{
-				if(home.optionfaculty == 1)
+				if(home.optionfaculty == 1) //for java
 				{
 					faculty.getjava();
 				}
