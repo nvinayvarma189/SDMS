@@ -3,15 +3,16 @@ import java.io.*;
 class Home extends StudentDairy
 {
 	Scanner s= new Scanner(System.in);
-	public int optionhome;
-	public int optionCouncellor;
-	public int optionstudent;
-	public int optionparent;
-	public int optionfaculty;
-	public int optionfaculty2;
-	public int optiondutyleave;
+	public int optionhome; //to take input from home.
+	public int optionCouncellor; // to take input from councellor.
+	public int optionstudent;// to take input from student.
+	public int optionparent; // to take input from parent.
+	public int optionfaculty; // to take input from faculty.
+	public int optionfaculty2; // to take input from faculty options.
+	public int optiondutyleave; // to get details from duty leave.
 	public void printHome()
 	{
+	//printing the menu.
 		System.out.println();
 		System.out.println("Enter the mode of login");
 		System.out.println("1.Stundent");
@@ -23,9 +24,11 @@ class Home extends StudentDairy
 		System.out.println("(Enter the number)");
 	}
 	public void getInputHome(){
+	//getting input from the user.
 		optionhome = s.nextInt();
 	}
-	public void printOptionHome(){
+	public void printOptionHome() //menu for student.
+	{
 		if(optionhome==1)
 		{	System.out.println("You selected Student");
 			System.out.println("Select an operation");
@@ -33,8 +36,8 @@ class Home extends StudentDairy
 			System.out.println("2.View your marks and Attendance");
 			System.out.println("3.View number of duty leaves");
 			optionstudent = s.nextInt();
-				}
-		else if(optionhome==2)
+		}
+		else if(optionhome==2)//menu for parent.
 			{
 				System.out.println("You selected Parent");
 				System.out.println("Select an operation");
@@ -43,7 +46,8 @@ class Home extends StudentDairy
 				System.out.println("3.View your child's Behaviour");
 				optionparent=s.nextInt();
 			}
-		else if(optionhome==3){
+		else if(optionhome==3) //menu for councellor.
+		{
 			System.out.println("You selected Councellor");
 			System.out.println("Select an operation");
 			System.out.println("1.View students details");
@@ -55,7 +59,7 @@ class Home extends StudentDairy
 			System.out.println("7.view number of Duty leaves");
 			 optionCouncellor =  s.nextInt();
 		}
-		else if(optionhome == 4)
+		else if(optionhome == 4)  //menu for faculty.
 			{
 				System.out.println("You selected Faculty");
 				System.out.println("Select subject");
@@ -71,6 +75,6 @@ class Home extends StudentDairy
 			}
 
 		else
-			System.exit(0);
+			System.exit(0); // exit.
 	}
 }
