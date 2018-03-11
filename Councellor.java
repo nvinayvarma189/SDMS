@@ -2,26 +2,19 @@ import java.util.*;
 import java.io.*;
 class Councellor extends StudentDairy
 	{
-			Student student = new Student();
-	public void displayStudents() throws Exception
+			Student student = new Student(); //another object created.
+	public void displayStudents() throws Exception //get data from the file.
 	{
 		BufferedReader r = new BufferedReader( new FileReader("Student.txt") );
 String s = "", line = null;
 while ((line = r.readLine()) != null) {
 		System.out.println(line);
-}
+	}
 }
 
-// public void displayAttendance() throws Exception
-// {
-// 	faculty.getjava();
-// 	faculty.getdsa();
-// 	faculty.getdc();
-// 	faculty.getmaths();
-// }
-
-public void addStudents() throws Exception
+public void addStudents() throws Exception //adding the students
 {
+  //storing in the file.
   BufferedWriter bw = new BufferedWriter(new FileWriter ("Student.txt",true));
   Scanner s = new Scanner(System.in);
   System.out.println("Input name");
@@ -46,16 +39,16 @@ public void addStudents() throws Exception
 	student.addedStudents(name,place,rollno,phn);
 }
 
-public void inputdetails()
+public void inputdetails() //inputting the details of a new students.
 {
 	student.putdetails();
 }
-public void printdetails( int s_number)
+public void printdetails( int s_number) //getting the information of student.
 {
 	student.getDetails(s_number);
 }
 
-public void viewBehaviour()
+public void viewBehaviour() //to view the behaviour of the student.
 {
 	Scanner s = new Scanner(System.in);
 	System.out.println("Enter roll number of student");
@@ -63,7 +56,7 @@ public void viewBehaviour()
 	student.behaviour(number);
 }
 
-public void inputBehaviour()
+public void inputBehaviour() // to input the behaviour of the student.
 {
 	Scanner s = new Scanner(System.in);
 	System.out.println("Enter roll number of student");
@@ -72,14 +65,14 @@ public void inputBehaviour()
 	String sbehaviour = s. next();
 	student.updatebehaviour(number,sbehaviour);
 }
-public void viewDutyLeaves()
+public void viewDutyLeaves() //to view the number of duty leaves a student got.
 {
 	Scanner s = new Scanner(System.in);
 	System.out.println("Enter roll number of student");
 	int number=s.nextInt();
 	student.viewdutyleave(number);
 }
-public void inputDutyLeaves()
+public void inputDutyLeaves() //to input the number of duty leaves for a student.
 {
 	Scanner s = new Scanner(System.in);
 	System.out.println("Enter roll number of student");
