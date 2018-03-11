@@ -79,37 +79,39 @@ class Main extends StudentDairy{
 
 			}
 
-			if(home.optionhome==3) //councellor
+			if(home.optionhome==3) //councellor options displayed
 			{
-				if(home.optionCouncellor==1)
+				if(home.optionCouncellor==1) //to see the details of the students
 				{
 					councellor.displayStudents();
 				}
-				else if(home.optionCouncellor == 2){
+				else if(home.optionCouncellor == 2){ //to view the academic details of subjects uploade by the respective faculty
 					faculty.getjava();
 					faculty.getdsa();
 					faculty.getdc();
 					faculty.getmaths();
 			}
-				else if(home.optionCouncellor==3){
+				else if(home.optionCouncellor==3){ //adding a new student to the databadse
 					councellor.addStudents();
 					councellor.displayStudents();
 				}
-				else if(home.optionCouncellor==4)
+				else if(home.optionCouncellor==4) //to view the behaviour of a student after uploading it.
 				{
-
+					//only viewable by the councellor, parent of the student, faculty. The student cannot see this.
 						councellor.viewBehaviour();
 				}
-					else if(home.optionCouncellor == 5)
+					else if(home.optionCouncellor == 5) // inputting the behaviour of a student in the class.
 					{
 						councellor.inputBehaviour();
 					}
-					else if(home.optionCouncellor == 6)
+					else if(home.optionCouncellor == 6) // inputting the number of details sanctioned to a student 
 					{
+					// only viewable by the student, councellor, faculty
 						councellor.inputDutyLeaves();
 					}
-					else if(home.optionCouncellor == 7)
+					else if(home.optionCouncellor == 7) // the councellor can see how many duty leaves the student got.
 					{
+						
 						councellor.viewDutyLeaves();
 					}
 				}
