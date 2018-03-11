@@ -9,7 +9,7 @@ class FacultyDc extends StudentDairy
     HashMap<Integer,Integer> studentsmarks1 = new HashMap<Integer,Integer>();
     HashMap<Integer,Integer> studentsmarks2 = new HashMap<Integer,Integer>();
     HashMap<Integer,Integer> studentsmarks3 = new HashMap<Integer,Integer>();
-    public void inputdcmarks( int number)
+    public void inputdcmarks( int number) //faculty inputs marks for a student.
     {
       System.out.println("Enter dc periocdical 1 marks");
       dcmark = s.nextInt();
@@ -21,19 +21,19 @@ class FacultyDc extends StudentDairy
       dcmark = s.nextInt();
       studentsmarks3.put(number,dcmark);
     }
-    public void inputdcAttendance(int number)
+    public void inputdcAttendance(int number) //faculty inputs attendance for a student.
     {
       System.out.println("Enter dc Attendance");
       dcattendance = s.nextInt();
       studentsattendance.put(number,dcattendance);
     }
-    public void getdcmarks(int number)
+    public void getdcmarks(int number) //to view the marks of a student.
     {
       System.out.println("Periodical 1 marks DC: "+ studentsmarks1.get(number));
       System.out.println("Periodical 1 marks DC: "+ studentsmarks2.get(number));
       System.out.println("End semester marks DC "+ studentsmarks3.get(number));
 			try{
-				if(studentsattendance.get(number) < 75)
+				if(studentsattendance.get(number) < 75) //to check whether he has minimum attendance to write the exam.
 				{
 					System.out.println("Your attendance is "+studentsattendance.get(number)+" and you are not qualified to write the exam");
 				}
