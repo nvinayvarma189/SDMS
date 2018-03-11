@@ -3,9 +3,9 @@ import java.util.*;
 class Main extends StudentDairy{
 	public static void main(String args[]) throws Exception
 	{
-		Student student = new Student(); //object of student
-		Councellor councellor = new Councellor(); //object of councellor(faculty member assigned to a particular class)
-		Faculty faculty = new Faculty();// object of faculty (we have 4subjects maths, digiital circuits, oops, data structure)
+		Student student = new Student(); //object of student.
+		Councellor councellor = new Councellor(); //object of councellor(faculty member assigned to a particular class).
+		Faculty faculty = new Faculty();// object of faculty (we have 4subjects maths, digiital circuits, oops, data structure).
 		 int s_number;
 		 int p_number;
 		 councellor.inputdetails();
@@ -15,23 +15,23 @@ class Main extends StudentDairy{
 			home.printHome();
 			home.getInputHome();
 			home.printOptionHome();
-			if(home.optionhome ==1) //selected as student
+			if(home.optionhome ==1) //selected as student.
 			{
-			if(home.optionstudent==1)	//Student options
+			if(home.optionstudent==1)	//Student options.
 				{
-				   System.out.println("Enter your roll no"); //viewing details
+				   System.out.println("Enter your roll no"); //viewing details.
 				   Scanner ss = new Scanner(System.in);
 				   s_number = ss.nextInt();
 				   councellor.printdetails(s_number);
 				}
 					if(home.optionstudent == 2 )
 						{
-							faculty.getjava(); //viewing marks and attendance for different subjects
-							faculty.getdsa(); //only will be visible if faculty already entered marks
+							faculty.getjava(); //viewing marks and attendance for different subjects.
+							faculty.getdsa(); //only will be visible if faculty already entered marks.
 							faculty.getdc();
 							faculty.getmaths();
 						}
-						if(home.optionstudent == 3 ) //to view the number of duty leaves he has got sanctioned
+						if(home.optionstudent == 3 ) //to view the number of duty leaves he has got sanctioned.
 						{
 							councellor.viewDutyLeaves();
 						}
@@ -79,19 +79,19 @@ class Main extends StudentDairy{
 
 			}
 
-			if(home.optionhome==3) //councellor options displayed
+			if(home.optionhome==3) //councellor options displayed.
 			{
-				if(home.optionCouncellor==1) //to see the details of the students
+				if(home.optionCouncellor==1) //to see the details of the students.
 				{
 					councellor.displayStudents();
 				}
-				else if(home.optionCouncellor == 2){ //to view the academic details of subjects uploade by the respective faculty
+				else if(home.optionCouncellor == 2){ //to view the academic details of subjects uploade by the respective faculty.
 					faculty.getjava();
 					faculty.getdsa();
 					faculty.getdc();
 					faculty.getmaths();
 			}
-				else if(home.optionCouncellor==3){ //adding a new student to the databadse
+				else if(home.optionCouncellor==3){ //adding a new student to the databadse.
 					councellor.addStudents();
 					councellor.displayStudents();
 				}
@@ -104,14 +104,14 @@ class Main extends StudentDairy{
 					{
 						councellor.inputBehaviour();
 					}
-					else if(home.optionCouncellor == 6) // inputting the number of details sanctioned to a student 
+					else if(home.optionCouncellor == 6) // inputting the number of details sanctioned to a student. 
 					{
-					// only viewable by the student, councellor, faculty
+					// only viewable by the student, councellor, faculty.
 						councellor.inputDutyLeaves();
 					}
 					else if(home.optionCouncellor == 7) // the councellor can see how many duty leaves the student got.
 					{
-					// only viewable by the student, councellor, faculty
+					// only viewable by the student, councellor, faculty.
 				        	councellor.viewDutyLeaves();
 					}
 				}
@@ -119,13 +119,13 @@ class Main extends StudentDairy{
 				if(home.optionhome==2) //parent options
 				{
 					Scanner ss = new Scanner(System.in);
-					if(home.optionparent==1) //viewing their child's details
+					if(home.optionparent==1) //viewing their child's details.
 					 	{
 			            			System.out.println("Enter your child's roll no");
 							s_number = ss.nextInt();
 							councellor.printdetails(s_number);
 						}
-					if(home.optionparent == 2 ) //viewing their child's academic details
+					if(home.optionparent == 2 ) //viewing their child's academic details.
 						{
 							faculty.getjava();
 							faculty.getdsa();
