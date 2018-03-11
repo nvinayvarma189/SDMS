@@ -3,7 +3,7 @@ import java.util.*;
 class Main extends StudentDairy{
 	public static void main(String args[]) throws Exception
 	{
-		Student student = new Student(); //object of student.
+		Student student = new Student(); //object of student...
 		Councellor councellor = new Councellor(); //object of councellor(faculty member assigned to a particular class).
 		Faculty faculty = new Faculty();// object of faculty (we have 4subjects maths, digiital circuits, oops, data structure).
 		 int s_number;
