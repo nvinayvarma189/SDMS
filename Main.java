@@ -3,7 +3,7 @@ import java.util.*;
 class Main extends StudentDairy{
 	public static void main(String args[]) throws Exception
 	{
-		Student student = new Student(); //object of student...
+		Student student = new Student(); //object of student.
 		Councellor councellor = new Councellor(); //object of councellor(faculty member assigned to a particular class).
 		Faculty faculty = new Faculty();// object of faculty (we have 4subjects maths, digiital circuits, oops, data structure).
 		 int s_number;
@@ -48,30 +48,30 @@ class Main extends StudentDairy{
 					{
 						faculty.callds();
 					}
-					if(home.optionfaculty == 3) // Digital circuits faculty
+					if(home.optionfaculty == 3) // Digital circuits faculty.
 					{
 						faculty.calldc();
 					}
-					if(home.optionfaculty == 4) //Maths Faculty
+					if(home.optionfaculty == 4) //Maths Faculty.
 					{
 						faculty.callmaths();
 					}
 				}
-			else if(home.optionfaculty2==2) //to view the details
+			else if(home.optionfaculty2==2) //to view the details.
 			{
-				if(home.optionfaculty == 1) //for java
+				if(home.optionfaculty == 1) //for java.
 				{
 					faculty.getjava();
 				}
-				if(home.optionfaculty == 2)
+				if(home.optionfaculty == 2) //for Data Structures.
 				{
 					faculty.getdsa();
 				}
-				if(home.optionfaculty == 3)
+				if(home.optionfaculty == 3) //for digital circuits.
 				{
 					faculty.getdc();
 				}
-				if(home.optionfaculty == 4)
+				if(home.optionfaculty == 4) //for mathematics.
 				{
 					faculty.getmaths();
 				}
