@@ -3,9 +3,9 @@ import java.util.*;
 class Main extends StudentDairy{
 	public static void main(String args[]) throws Exception
 	{
-		Student student = new Student();
-		Councellor councellor = new Councellor();
-		Faculty faculty = new Faculty();
+		Student student = new Student(); //object of student
+		Councellor councellor = new Councellor(); //object of councellor(faculty member assigned to a particular class)
+		Faculty faculty = new Faculty();// object of faculty (we have 4subjects maths, digiital circuits, oops, data structure)
 		 int s_number;
 		 int p_number;
 		 councellor.inputdetails();
@@ -15,24 +15,23 @@ class Main extends StudentDairy{
 			home.printHome();
 			home.getInputHome();
 			home.printOptionHome();
-			if(home.optionhome ==1)
+			if(home.optionhome ==1) //selected as student
 			{
-						if(home.optionstudent==1)			//Student
-									{
-										System.out.println("Enter your roll no");
-										Scanner ss = new Scanner(System.in);
-										s_number = ss.nextInt();
-
-										councellor.printdetails(s_number);
-									}
-						if(home.optionstudent == 2 )
+			if(home.optionstudent==1)	//Student options
+				{
+				   System.out.println("Enter your roll no"); //viewing details
+				   Scanner ss = new Scanner(System.in);
+				   s_number = ss.nextInt();
+				   councellor.printdetails(s_number);
+				}
+					if(home.optionstudent == 2 )
 						{
-							faculty.getjava();
-							faculty.getdsa();
+							faculty.getjava(); //viewing marks and attendance for different subjects
+							faculty.getdsa(); //only will be visible if faculty already entered marks
 							faculty.getdc();
 							faculty.getmaths();
 						}
-						if(home.optionstudent == 3 )
+						if(home.optionstudent == 3 ) //to view the number of duty leaves he has got sanctioned
 						{
 							councellor.viewDutyLeaves();
 						}
