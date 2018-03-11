@@ -9,7 +9,7 @@ class FacultyJava extends StudentDairy
     HashMap<Integer,Integer> studentsmarks1 = new HashMap<Integer,Integer>();
     HashMap<Integer,Integer> studentsmarks2 = new HashMap<Integer,Integer>();
     HashMap<Integer,Integer> studentsmarks3 = new HashMap<Integer,Integer>();
-    public void inputjavamarks( int number)
+    public void inputjavamarks( int number) //Java faculty input marks of a student.
     {
       System.out.println("Enter java periocdical 1 marks");
       javamark = s.nextInt();
@@ -21,20 +21,20 @@ class FacultyJava extends StudentDairy
       javamark = s.nextInt();
       studentsmarks3.put(number,javamark);
     }
-    public void inputjavaAttendance(int number)
+    public void inputjavaAttendance(int number) //Java faculty input attendance for a student.
     {
       System.out.println("Enter java Attendance");
       javaattendance = s.nextInt();
       studentsattendance.put(number,javaattendance);
     }
-    public void getjavamarks(int number)
+    public void getjavamarks(int number) //To view the academic details of the student
     {
       System.out.println("Periodical 1 marks java: "+ studentsmarks1.get(number));
       System.out.println("Periodical 2 marks java: "+ studentsmarks2.get(number));
       System.out.println("End sem marks java: "+ studentsmarks3.get(number));
 			try
 			{
-				if(studentsattendance.get(number) < 75)
+				if(studentsattendance.get(number) < 75) //checking for attendance shortage.
 				{
 					System.out.println("Your attendance is "+studentsattendance.get(number)+" and you are not qualified to write the exam");
 				}
