@@ -33,5 +33,5 @@ can update the students attendance.
 
 
 ### To Try it:
-compile: StudentDairy.java Home.java Main.java Student.java Faculty.java Councellor.java
+**compile:** StudentDairy.java Home.java Main.java Student.java Faculty.java Councellor.java
 
