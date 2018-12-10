@@ -3,8 +3,6 @@ This repository is for the mini projects which is a student management system
 
 Author : N.Vinay Varma
 
-Class : CSE-C,S3
-
 Java Project : Students Dairy
 
 This project was first built with many classes and later on reduced and made the classes
